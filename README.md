@@ -1,4 +1,4 @@
-# cookbook-a cookbook
+# cookbook-b cookbook
 
 Proof of concept, kitchen docker pipeline.
 

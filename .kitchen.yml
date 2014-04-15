@@ -8,11 +8,11 @@ driver_config:
 platforms:
 - name: centos-6.5
   driver_config:
-    image: atomicpenguin/centos:6.5
+    image: baseline-a
     platform: centos
 
 suites:
 - name: default
   run_list:
-  - recipe[cookbook-a]
+  - recipe[cookbook-b]
   attributes: {}

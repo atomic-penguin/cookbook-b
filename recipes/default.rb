@@ -16,4 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'build-essential'
+
+%w(cookbook-a postfix).each do |thing|
+  include_recipe thing
+end
