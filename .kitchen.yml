@@ -1,6 +1,8 @@
 ---
 driver: docker
 driver_config:
+  require_chef_omnibus: false 
+  disable_setup: true
   privileged: true
 
 platforms:
