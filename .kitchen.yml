@@ -1,8 +1,6 @@
 ---
 driver: docker
 driver_config:
-  provision_command:
-  - yum -y install which tar
   privileged: true
 
 platforms:
