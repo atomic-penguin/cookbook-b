@@ -1,0 +1,18 @@
+---
+driver: docker
+driver_config:
+  provision_command:
+  - yum -y install which tar
+  privileged: true
+
+platforms:
+- name: centos-6.5
+  driver_config:
+    image: atomicpenguin/centos:6.5
+    platform: centos
+
+suites:
+- name: default
+  run_list:
+  - recipe[cookbook-a]
+  attributes: {}
